@@ -1,0 +1,39 @@
+version: '3'
+# services:
+#   web:
+#     build: . # building on ctr dir
+#     command: python manage.py runserver 0.0.0.0:8000
+#     volumes:
+#       - .:/app
+#     ports:
+#       - "8000:8000"
+# version: '3'
+
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: bus_project
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: postgres
+    labels:
+      com.docker.compose.container-number: "1"
+
+  web:
+    build: .
+    command: "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - DEBUG=1
+      - DB_HOST=localhost
+      - DB_NAME=bus_project
+      - DB_USER=postgres
+      - DB_PASSWORD=1234
+      - postgres:5432
+    labels:
+      com.docker.compose.container-number: "2"

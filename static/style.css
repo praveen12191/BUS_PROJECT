@@ -1,0 +1,30 @@
+.top{
+    background-color: rgb(192, 217, 208);
+    padding: 20px;
+    border: 10px;
+    text-align: right;
+}
+a{
+    margin: 20px;
+    padding : 20px;
+    color: rgb(12, 26, 38);
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgb(208, 225, 219);
+}
+h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.form{
+    text-align: center;
+}
+#button{
+    padding: 10px;
+    box-sizing: border-box;
+   
+}
+#int{
+    padding: 10px;
+}
