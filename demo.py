@@ -4,3 +4,5 @@ device_id = '12684904'
 response = requests.get('https://www.followmee.com/api/location/12684904', params={'ak': api_key})
 print(response.text)
 print(123)
+rno = ""
+busnumber = 0  

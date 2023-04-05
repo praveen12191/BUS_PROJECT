@@ -1,8 +1,5 @@
+{% load static %}
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -10,22 +7,40 @@
         <title>Register</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="static/register.css">
+        <link rel="stylesheet" href="../static/register.css">
     </head>
     <body>
-        <style>
-            input{
-                margin:10px;
-            }
-        </style>
+        <div id="top">
         <form class="form" action="register" method="POST">
             {% csrf_token %}
-            Name <input type="text" name="name"></br>
-            Email <input type="email" name="email" ></br>
-            Password<input type="password" name="password1"></br>
-            Conform Password<input type="password" name="password2" ></br>
-            <input type="submit" value="submit">
+            <h1> Register here! </h1>
+            <lable>R no</lable><br>
+            <br>
+            <input class="form1" id="rno" type="text" name="rno" required></br>
+            <br>
+            <lable>Email</lable><br>
+            <br>
+            <input class="form1" type="email" name="email" required></br>
+            <br>
+            <lable>Busnumber</lable><br>
+            <br>
+            <input class="form1" type="text" name="busnumber" required></br>
+            <br>
+            <lable>Stopname</lable><br>
+            <br>
+            <input class="form1" type="text" name="stopname" required></br>
+            <br>
+            <lable>Password</lable><br>
+            <br>
+            <input class="form1" type="password" name="password1" required></br>
+            <br>
+            <lable>Conform Password</lable><br>
+            <br>
+            <input class="form1" type="password" name="password2" required></br>
+            <br>
+            <input id="sub" type="submit" value="submit">
         <form>
+        </div>
         <div>
             {% for i in messages %}
             <h2> {{i}} </h2>

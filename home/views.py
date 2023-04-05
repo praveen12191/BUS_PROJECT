@@ -8,11 +8,13 @@ from opencage.geocoder import OpenCageGeocode
 from django.shortcuts import render
 from geopy import Nominatim
 from django.conf import settings
-from django.shortcuts import render
 from django.http import JsonResponse
 import requests
 from home.models import Location
 import script
+from addbus.models import addBus
+from accounts.models import driver,student
+import demo
 # api_key = '507a9a77c149643e1c486eba001f979b'
 # device_id = '12684904'
 
@@ -32,23 +34,29 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 def home(request):
-    return render(request,"index.html")
+    return render(request,"base.html")
 def get_loc(request):
-    api_key = '507a9a77c149643e1c486eba001f979b'
-    device_id = '12684978'
-    #url = 'https://www.followmee.com/api/tracks.aspx?key=5a1456603bc811e83ed20425cf67aafc&username=hariravi&output=json&function=currentfordevice&deviceid=12684978'
-    url =  	'https://www.followmee.com/api/tracks.aspx?key=d76937ef4c298e0cac21b72f519a9547&username=praveen816&output=json&function=currentfordevice&deviceid=123456'
-    bus_number = int(request.POST["num"])
-    print(url)
-    if(bus_number==1):
-        script.update(api_key,device_id,url,bus_number)
-        data = Location.objects.all().values()
-        for i in data:
-            if(i['device_id']==device_id):
-                file_path = os.path.join(BASE_DIR, 'map.html')
-                return render(request,'map.html') 
+    
+    # api_key = '61139e699ff4e16c0572ec8215a73bac'
+    # device_id = '12699221'
+    # #url = 'https://www.followmee.com/api/tracks.aspx?key=5a1456603bc811e83ed20425cf67aafc&username=hariravi&output=json&function=currentfordevice&deviceid=12684978'
+    # #url =  	'	https://www.followmee.com/api/tracks.aspx?key=d76937ef4c298e0cac21b72f519a9547&username=praveen816&output=json&function=currentforalldevices'
+    # url = 'https://www.followmee.com/api/tracks.aspx?key=61139e699ff4e16c0572ec8215a73bac&username=ravipraveen123&output=json&function=currentfordevice&deviceid=12699221'
+    # #url = 'http://www.followmee.com/mapx.aspx?key=d76937ef4c298e0cac21b72f519a9547&username=praveen816&type=2&deviceid=12695654&function=historyfordevice&history=1'
+    busnumber = demo.busnumber
+    all = driver.objects.all()
+    for i in all:
+        if(int(i.busnumber)==int(busnumber)):
+            api_key = str(i.ApiKey)
+            bus_number = int(i.busnumber)
+            url = str(i.url)
+            device_id = int(i.deviceId)
+            script.update(api_key,device_id,url,bus_number)
+            data = Location.objects.all().values()
+            file_path = os.path.join(BASE_DIR, 'map.html')
+            val = script.val 
+            return render(request,'location.html',{'val':val}) 
 def not_exit(request):
     not_present = request.POST["not_present"]
     return render(request,"loc.html",{"bus":"not_present"})

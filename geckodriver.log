@@ -1,0 +1,78 @@
+1679998335456	geckodriver	INFO	Listening on 127.0.0.1:53829
+1679998336060	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "53830" "--r ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/7f/m3k2qkcs7zxfzjpd0xr3s3k00000gn/T/rust_mozprofileDfks1L"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1679998403269	geckodriver	INFO	Listening on 127.0.0.1:53866
+1679998404074	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "53867" "--r ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/7f/m3k2qkcs7zxfzjpd0xr3s3k00000gn/T/rust_mozprofilefmStfs"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1679998407047	Marionette	INFO	Marionette enabled
+1679998408084	Marionette	INFO	Listening on port 53874
+Read port: 53874
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+Read port: 53874
+WebDriver BiDi listening on ws://127.0.0.1:53867
+Read port: 53874
+1679998413567	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1679998419809	geckodriver	INFO	Listening on 127.0.0.1:53881
+console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 764))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 416))
+1679998420423	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "53882" "--r ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/7f/m3k2qkcs7zxfzjpd0xr3s3k00000gn/T/rust_mozprofile1s4dxP"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/7f/m3k2qkcs7zxfzjpd0xr3s3k00000gn/T/rust_mozprofilefmStfs/search.json.mozlz4", (void 0)))
+1679998434629	Marionette	INFO	Marionette enabled
+1679998443155	Marionette	INFO	Listening on port 53904
+Read port: 53904
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+Read port: 53904
+Read port: 53904
+Read port: 53904
+Read port: 53904
+Read port: 53904
+WebDriver BiDi listening on ws://127.0.0.1:53882
+Read port: 53904
+1679998453416	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[Parent 6234, IPC Launch #1] WARNING: parent MachReceivePortSendRight failed: 0x10004003 (ipc/rcv) timed out: file /builds/worker/checkouts/gecko/ipc/glue/GeckoChildProcessHost.cpp:1319
+[Parent 6234, IPC I/O Parent] WARNING: Failed to launch utility subprocess: file /builds/worker/checkouts/gecko/ipc/glue/GeckoChildProcessHost.cpp:770
+[Parent 6234, IPC Launch #2] WARNING: parent MachReceivePortSendRight failed: 0x10004003 (ipc/rcv) timed out: file /builds/worker/checkouts/gecko/ipc/glue/GeckoChildProcessHost.cpp:1319
+[Parent 6234, IPC I/O Parent] WARNING: Failed to launch tab subprocess: file /builds/worker/checkouts/gecko/ipc/glue/GeckoChildProcessHost.cpp:770
+DevTools listening on ws://127.0.0.1:53867/devtools/browser/c744ef48-4650-422f-98ee-fbf2e4b7bb73
+1679998470478	geckodriver	INFO	Listening on 127.0.0.1:53916
+1679998470715	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "53917" "--r ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/7f/m3k2qkcs7zxfzjpd0xr3s3k00000gn/T/rust_mozprofileoZc5sA"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: Region.sys.mjs: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 762))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 416))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/7f/m3k2qkcs7zxfzjpd0xr3s3k00000gn/T/rust_mozprofile1s4dxP/search.json.mozlz4", (void 0)))
+1679998482005	Marionette	INFO	Marionette enabled
+[Parent 6263, IPC Launch #1] WARNING: parent MachReceivePortSendRight failed: 0x10004003 (ipc/rcv) timed out: file /builds/worker/checkouts/gecko/ipc/glue/GeckoChildProcessHost.cpp:1319
+[Parent 6263, IPC I/O Parent] WARNING: Failed to launch tab subprocess: file /builds/worker/checkouts/gecko/ipc/glue/GeckoChildProcessHost.cpp:770
+1679998496633	Marionette	INFO	Listening on port 53952
+Read port: 53952
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+Read port: 53952
+DevTools listening on ws://127.0.0.1:53882/devtools/browser/6c28e84f-d7bd-43f7-aae2-8c983d7656a7
+Read port: 53952
+WebDriver BiDi listening on ws://127.0.0.1:53917
+1679998500065	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 764))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 416))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/7f/m3k2qkcs7zxfzjpd0xr3s3k00000gn/T/rust_mozprofileoZc5sA/search.json.mozlz4", (void 0)))
+[Parent 6311, IPC Launch #1] WARNING: parent MachReceivePortSendRight failed: 0x10004003 (ipc/rcv) timed out: file /builds/worker/checkouts/gecko/ipc/glue/GeckoChildProcessHost.cpp:1319
+[Parent 6311, IPC I/O Parent] WARNING: Failed to launch tab subprocess: file /builds/worker/checkouts/gecko/ipc/glue/GeckoChildProcessHost.cpp:770
+DevTools listening on ws://127.0.0.1:53917/devtools/browser/5de8055e-fd81-421c-bc16-247589f38ae8
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
