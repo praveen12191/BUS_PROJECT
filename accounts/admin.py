@@ -1,3 +1,8 @@
 from django.contrib import admin
-
-# Register your models here.
+from .models import driver,student
+admin.site.register(
+    driver
+)
+admin.site.register(
+    student
+)

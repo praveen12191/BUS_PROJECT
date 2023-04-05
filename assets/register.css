@@ -1,0 +1,58 @@
+
+.form{
+    padding: 20px;
+}
+input{
+    margin: 20px;
+}
+h1{
+    text-align: center;
+}
+#email{
+    background-color: antiquewhite;
+    padding: 30px;
+}
+body{
+    background-color: rgb(192, 217, 208);
+}
+h1,form{
+    text-align : center;
+}
+input{
+    border-radius : 10px;
+    width : 7cm;
+    height : 35px;
+}
+#sub{
+    width:3cm;
+}
+body{
+    margin-top: 70px;
+}
+.form1{
+    border-style: groove;
+    border-color: rgb(119, 148, 127);
+}
+input:hover{
+    color: rgb(70, 105, 139);
+}
+h1{
+    text-shadow:2px 2px 2px rgb(165, 151, 167);
+}
+#sub:hover{
+    background-color: rgb(198, 225, 225);
+}
+#sub{
+    border-style: groove;
+    border-color: rgb(43, 114, 143);
+}
+#top{
+    background-color: rgb(198, 229, 218);
+    width: 20%;
+    padding: 70px;
+    margin-left: 450px;
+    border-radius: 20px;
+}
+#top:hover{
+    background-color: rgb(187, 212, 202);
+}

@@ -20,17 +20,22 @@
     
             function initMap() {
                 var op = {
-                    zoom:8,
-                    center : {lat:42.3601,lng:-71.0589}
+                    zoom:30,
+                     
+                    center : {lat:{{val.lat}} ,lng:{{val.long}} }
                 }
     
                 map = new google.maps.Map(document.getElementById('map'),op); 
+                var marker = new google.maps.Marker({
+                    position:{lat:{{val.lat}},lng:{{val.long}}},
+                    map:map
+                });
             }
     
             google.maps.event.addDomListener(window, 'load', initMap);
         </script>
         </script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDncmciRmkg9lfLmfJD7MVchxg3KuZQ96E&callback=initMap"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDn5SRn2Pgev9EjOlBmrsCmr975a71tqLc&callback=initMap"></script>
         <style>
             /* Set the size of the map */
             #map {

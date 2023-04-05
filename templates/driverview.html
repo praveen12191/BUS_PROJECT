@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+    <body>
+        <div class="table">
+            <table>
+                <tr>
+                    <th> Stop name </th>
+                    <th> Count </th>
+                </tr>
+                {% for i,j in ext.items %}
+                <tr>
+                    <td>{{i}}</td>
+                    <td>{{j}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+    </body>
